@@ -1,0 +1,20 @@
+{
+  "name": "pick-your-css",
+  "version": "1.0.0",
+  "description": "Place a CSS trick or pick one to use.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js && nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
