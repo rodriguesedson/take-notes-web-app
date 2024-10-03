@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 const noteSchema = mongoose.Schema({
   author: {
     type: String,
-    required: true
+    required: [true, 'author is required']
   },
   title: {
     type: String,
-    required: true
+    required: [true, 'title is required']
   },
   notes: {
     type: String,
-    required: true
+    required: [true, 'notes is required']
   }
 });
 
