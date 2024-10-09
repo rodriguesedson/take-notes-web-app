@@ -2,12 +2,11 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const port = 3000;
+const notesRouter = require('./src/routers/note.router.js')
 
 app.use(express.json());
 
-app.get('/', async (req, res) => {
-  res.status(200).send('Success');
-})
+app.use('/api/notes', notesRouter);
 
 app.listen(port, () => {
   console.log(`Connected at port ${port}`);
