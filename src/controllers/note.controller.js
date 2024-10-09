@@ -1,6 +1,5 @@
 const Note = require('../model/note.model.js');
 const Enum = require('../enum/Enum.js');
-
 const createNotes = async (req, res) => {
   try {
     const newNote = new Note(req.body)
