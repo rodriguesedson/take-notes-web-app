@@ -31,7 +31,7 @@ export default function RootLayout({
 
   useEffect(() => {
     getPath();
-  }, [])
+  })
 
   return (
     <html lang="en" className="h-full">
