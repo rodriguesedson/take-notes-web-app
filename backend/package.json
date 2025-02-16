@@ -1,10 +1,9 @@
 {
-  "name": "pick-your-css",
+  "name": "take-notes-web-app",
   "version": "1.0.0",
-  "description": "Place a CSS trick or pick one to use.",
+  "description": "Another note taking app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
   "keywords": [],
