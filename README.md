@@ -1,2 +1,2 @@
 # Take Notes
-Note taking web app
+Another note taking web app
