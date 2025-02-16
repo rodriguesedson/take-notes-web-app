@@ -14,13 +14,13 @@ export default function RootLayout({
 }>) {
   const [notesActive, setNotesActive] = useState(false);
   const [foldersActive, setFoldersActive] = useState(false);
-  let pathname = usePathname();
+  const pathname = usePathname();
 
   function getPath() {
-    if (pathname === '/notes') {
+    if (pathname === '/home/notes') {
       setNotesActive(true);
       setFoldersActive(false);
-    } else if (pathname === '/folders') {
+    } else if (pathname === '/home/folders') {
       setNotesActive(false);
       setFoldersActive(true);
     } else {
@@ -50,14 +50,14 @@ export default function RootLayout({
               <Link 
                 className="w-full flex justify-center"
                 color="foreground" 
-                href={"/notes"}
+                href={"/home/notes"}
                 >Notes</Link>
             </NavbarItem>
             <NavbarItem isActive={foldersActive}>
               <Link
                 className="w-full flex justify-center"
                 color="foreground" 
-                href={"/folders"}
+                href={"/home/folders"}
                 >Folders</Link>
             </NavbarItem>
           </NavbarContent>
